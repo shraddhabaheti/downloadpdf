@@ -4,6 +4,7 @@ import "./style.css";
 import { useRef } from "react";
 import jsPDF from "jspdf";
 import ReportTemplate from "./ReportTemplate";
+import Login from './Login';
 function App() {
   const reportTemplateRef = useRef(null);
 
@@ -32,7 +33,7 @@ function App() {
         <ReportTemplate />
         
       </div>
-      <input type="text"/>
+      <Login/>
     </div>
   );
 }
