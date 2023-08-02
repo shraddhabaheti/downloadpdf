@@ -1,6 +1,7 @@
 // import e from "express";
 import { useState } from "react";
-
+import './App.css'
+import Marquee from "react-fast-marquee";
 function Login(){
     const [state,setState]=useState({
         name:"",
@@ -21,14 +22,19 @@ function Login(){
       setState(state)
     }
     return(
-        <div onCopy={(e)=>{e.preventDefault()}}>
+        <div style={{userSelect: "none" }} onCopy={(e)=>{e.preventDefault()}}>
             <h1>Login From Design</h1>
             <form onSubmit={onSubmit} >
-                <label>name</label>
+                <label >name</label>
                 <input type="text" name="name" onChange={handleChange}/>
                 <label>email</label>
                 <input type="text" name="email" onChange={handleChange}/>
-                <button type="submit">Submit</button>
+                <div>
+                    <Marquee><p>Hello i am shraddha Baheti</p></Marquee>
+                </div>
+                <marquee><p>text</p></marquee>
+                <button  type="submit">Submit</button>
+                
             </form>
         </div>
     )

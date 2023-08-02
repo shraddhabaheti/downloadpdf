@@ -5,6 +5,8 @@ import { useRef } from "react";
 import jsPDF from "jspdf";
 import ReportTemplate from "./ReportTemplate";
 import Login from './Login';
+import Demo from './Demo';
+import Reg from './Reg';
 function App() {
   const reportTemplateRef = useRef(null);
 
@@ -34,6 +36,8 @@ function App() {
         
       </div>
       <Login/>
+      <Demo/>
+      <Reg/>
     </div>
   );
 }
